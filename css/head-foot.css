@@ -1,0 +1,77 @@
+body {
+  font-family: "Saira Condensed", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1240px;
+  padding: 0%;
+}
+
+.-logo-search > a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.-logo-search > a > h1 {
+  margin: 0;
+  font-size: 68px;
+}
+.-logo-search > div {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px;
+  border-radius: 24px;
+  width: 500px;
+  height: 34px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 13px;
+}
+.-logo-search > div > input {
+  border: none;
+  font-size: 16px;
+  width: 95%;
+}
+.-logo-search > div > input:focus {
+  outline: none;
+}
+.-logo-search > div > i {
+  font-size: 23px;
+}
+
+.-menubar-auth {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.-menubar-auth a {
+  text-decoration: none;
+  color: black;
+}
+.-menubar-auth .-menubar ul {
+  padding-inline-start: 0;
+  list-style: none;
+  display: flex;
+}
+.-menubar-auth .-menubar ul li:not(:first-child) {
+  margin-left: 60px;
+}
+.-menubar-auth .-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 285px;
+}
+
+/*# sourceMappingURL=head-foot.css.map */

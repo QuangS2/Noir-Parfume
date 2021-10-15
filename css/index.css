@@ -1,0 +1,76 @@
+.-sp-pro-motion {
+  display: flex;
+  justify-content: space-between;
+  max-height: 435px;
+}
+.-sp-pro-motion > div.-sp-pro {
+  width: 774px;
+  position: relative;
+}
+.-sp-pro-motion > div.-sp-pro div.-arrow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 47%;
+  font-size: 47px;
+}
+.-sp-pro-motion > div.-sp-pro div.-arrow > i {
+  padding: 0 1em;
+  cursor: pointer;
+}
+.-sp-pro-motion > div.-promotion {
+  width: 435px;
+  position: relative;
+}
+.-sp-pro-motion > div img {
+  width: 100%;
+}
+.-sp-pro-motion > div .-bar-stick {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+.-sp-pro-motion > div .-bar-stick span {
+  display: block;
+  width: 29px;
+  height: 3px;
+  background-color: black;
+  margin: 0 7px;
+  cursor: pointer;
+}
+
+.-top-product div.-bar-btn {
+  display: flex;
+}
+.-top-product div.-bar-btn p {
+  display: block;
+  padding: 7px 23px;
+  background-color: rgba(128, 128, 128, 0.4);
+  font-size: 19px;
+  font-weight: bold;
+  margin-right: 11px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.-pro-line > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.-product {
+  width: 200px;
+  text-align: center;
+}
+.-product img {
+  width: 100%;
+}
+.-product a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=index.css.map */
