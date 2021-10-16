@@ -132,6 +132,9 @@
 .-brand {
   margin-top: 37px;
 }
+.-brand div.-banner-content {
+  margin-top: 37px;
+}
 .-brand div.-banner-content > a:first-child {
   width: 454px;
 }
@@ -159,9 +162,17 @@
 .-advise-box {
   display: flex;
   justify-content: space-around;
+  font-size: 27px;
 }
 .-advise-box > div {
   width: 40%;
+}
+.-advise-box > div p {
+  width: fit-content;
+  padding: 7px 23px;
+  border-radius: 7px;
+  font-size: 23px;
+  cursor: pointer;
 }
 .-advise-box > div h4 {
   text-align: center;
@@ -169,13 +180,22 @@
 .-advise-box > div input, .-advise-box > div textarea {
   width: 100%;
   margin: 11px;
+  margin-left: unset;
   padding: 7px;
 }
 .-advise-box > div.-advise-mail textarea {
   height: 126px;
 }
+.-advise-box > div.-advise-mail p {
+  background-color: gray;
+  margin-left: auto;
+}
 .-advise-box > div.-advise-onl textarea {
   height: 184px;
+}
+.-advise-box > div.-advise-onl p {
+  background-color: lightblue;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=index.css.map */
