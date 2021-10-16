@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   max-height: 435px;
+  margin-top: 31px;
 }
 .-sp-pro-motion > div.-sp-pro {
   width: 774px;
@@ -42,6 +43,9 @@
   cursor: pointer;
 }
 
+.-top-product {
+  margin-top: 41px;
+}
 .-top-product div.-bar-btn {
   display: flex;
 }
@@ -56,6 +60,9 @@
   cursor: pointer;
 }
 
+.-pro-line {
+  margin-top: 29px;
+}
 .-pro-line > div {
   display: flex;
   justify-content: space-between;
@@ -71,6 +78,104 @@
 .-product a {
   text-decoration: none;
   color: black;
+}
+
+.-sex div.-banner-content > a {
+  width: 600px;
+}
+
+.-banner-content {
+  display: flex;
+  justify-content: space-between;
+}
+.-banner-content > a > div:last-child {
+  bottom: 23px;
+}
+.-banner-content > a:first-child p {
+  color: black;
+}
+.-banner-content > a:last-child p {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.-tittle {
+  font-size: 31px;
+  text-align: center;
+  margin: 37px 0;
+}
+
+.-banner-view {
+  display: block;
+  position: relative;
+}
+.-banner-view > div:last-child {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+.-banner-view > div:last-child > p {
+  font-size: 31px;
+  font-weight: bold;
+}
+.-banner-view > div:last-child > p:last-child {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 7px;
+  font-size: 26px;
+  display: block;
+  padding: 13px;
+  font-weight: 600;
+  background-color: rgba(242, 226, 226, 0.22);
+  color: black;
+}
+
+.-brand {
+  margin-top: 37px;
+}
+.-brand div.-banner-content > a:first-child {
+  width: 454px;
+}
+.-brand div.-banner-content > a:last-child {
+  width: 757px;
+}
+.-brand-logo {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-around;
+}
+.-brand-logo h3 {
+  color: rgba(0, 0, 0, 0.71);
+}
+
+.-bot-promotion div.-banner-promotion {
+  display: flex;
+  justify-content: space-between;
+}
+.-bot-promotion div.-banner-promotion > a {
+  display: block;
+  width: 380px;
+}
+
+.-advise-box {
+  display: flex;
+  justify-content: space-around;
+}
+.-advise-box > div {
+  width: 40%;
+}
+.-advise-box > div h4 {
+  text-align: center;
+}
+.-advise-box > div input, .-advise-box > div textarea {
+  width: 100%;
+  margin: 11px;
+  padding: 7px;
+}
+.-advise-box > div.-advise-mail textarea {
+  height: 126px;
+}
+.-advise-box > div.-advise-onl textarea {
+  height: 184px;
 }
 
 /*# sourceMappingURL=index.css.map */
