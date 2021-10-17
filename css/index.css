@@ -198,4 +198,22 @@
   margin: 0 auto;
 }
 
+.-utilities {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: rgba(196, 196, 196, 0.31);
+}
+.-utilities > div {
+  text-align: center;
+}
+.-utilities > div i {
+  font-size: 50px;
+}
+.-utilities > div p {
+  margin-top: 17px;
+  font-size: 23px;
+}
+
 /*# sourceMappingURL=index.css.map */
