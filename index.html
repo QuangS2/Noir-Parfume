@@ -12,7 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/head-foot.css">
     <link rel="stylesheet" href="./css/index.css">
-    <!-- <script src="./js/np.js"></script> -->
+    <link rel="stylesheet" href="./css/effect.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/np.js"></script>
     <title>Nori Parfume</title>
 </head>
 
@@ -61,30 +64,54 @@
         <div class="container">
             <section>
                 <div class="-sp-pro-motion">
-                    <div class="-sp-pro">
+                    <div class="-sp-pro -slide">
                         <div class="-arrow">
-                            <i class="fas fa-chevron-left"></i>
-                            <i class="fas fa-chevron-right"></i>
+                            <i class="fas fa-chevron-left -leftBtn"></i>
+                            <i class="fas fa-chevron-right -rightBtn"></i>
                         </div>
                         <div class="-bar-stick">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span slot="1" class="active"></span>
+                            <span slot="2"></span>
+                            <span slot="3"></span>
+                            <span slot="4"></span>
                         </div>
-                        <div class="-img-sp">
-                            <div>
-                                <img src="./images/banner-sp/slide5.jpg" alt="">
+                        <div class="-img-sp -slide-img" slot="1" max-slot="4">
+                            <div class="-img-sp-content top" slot="1">
+                                <div>
+                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="-img-sp-content" slot="2">
+                                <div>
+                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="-img-sp-content" slot="3">
+                                <div>
+                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="-img-sp-content" slot="4">
+                                <div>
+                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="-promotion">
-                        <div>
-                            <div class="-bar-stick">
-                                <span></span>
-                                <span></span>
+                    <div class="-promotion -slide">
+                        <div class="-bar-stick">
+                            <span slot="1" class="active"></span>
+                            <span slot="2"></span>
+                            <span slot="3"></span>
+                        </div>
+                        <div class="-img-ad -slide-img" slot="1" max-slot="3">
+                            <div class="top" slot="1">
+                                <img src="./images/promotion/dior-paper.png" alt="">
                             </div>
-                            <div class="-img-ad">
+                            <div slot="2">
+                                <img src="./images/promotion/dior-paper.png" alt="">
+                            </div>
+                            <div slot="3">
                                 <img src="./images/promotion/dior-paper.png" alt="">
                             </div>
                         </div>

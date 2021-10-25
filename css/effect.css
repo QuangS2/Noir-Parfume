@@ -1,0 +1,32 @@
+.rightSide {
+  left: 100% !important;
+}
+
+.leftSide {
+  left: -100% !important;
+}
+
+.effect {
+  transition: left, 1s;
+}
+
+.top {
+  opacity: 1 !important;
+}
+
+span.active {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+div.-slide {
+  position: relative !important;
+  overflow: hidden !important;
+}
+div.-slide-img > div {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+/*# sourceMappingURL=effect.css.map */

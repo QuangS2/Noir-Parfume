@@ -1,12 +1,11 @@
 .-sp-pro-motion {
   display: flex;
   justify-content: space-between;
-  max-height: 435px;
+  height: 435px;
   margin-top: 31px;
 }
 .-sp-pro-motion > div.-sp-pro {
   width: 774px;
-  position: relative;
 }
 .-sp-pro-motion > div.-sp-pro div.-arrow {
   display: flex;
@@ -15,9 +14,26 @@
   position: absolute;
   top: 47%;
   font-size: 47px;
+  z-index: 5;
 }
 .-sp-pro-motion > div.-sp-pro div.-arrow > i {
   padding: 0 1em;
+  cursor: pointer;
+}
+.-sp-pro-motion > div div.-bar-stick {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
+  bottom: 10%;
+  width: 100%;
+}
+.-sp-pro-motion > div div.-bar-stick span {
+  display: block;
+  width: 29px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.51);
+  margin: 0 7px;
   cursor: pointer;
 }
 .-sp-pro-motion > div.-promotion {
@@ -26,21 +42,6 @@
 }
 .-sp-pro-motion > div img {
   width: 100%;
-}
-.-sp-pro-motion > div .-bar-stick {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-}
-.-sp-pro-motion > div .-bar-stick span {
-  display: block;
-  width: 29px;
-  height: 3px;
-  background-color: black;
-  margin: 0 7px;
-  cursor: pointer;
 }
 
 .-top-product {
@@ -112,6 +113,7 @@
   position: absolute;
   width: 100%;
   text-align: center;
+  z-index: 1;
 }
 .-banner-view > div:last-child > p {
   font-size: 31px;
@@ -177,7 +179,8 @@
 .-advise-box > div h4 {
   text-align: center;
 }
-.-advise-box > div input, .-advise-box > div textarea {
+.-advise-box > div input,
+.-advise-box > div textarea {
   width: 100%;
   margin: 11px;
   margin-left: unset;
