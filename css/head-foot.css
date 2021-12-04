@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 0;
   width: auto;
+  margin-top: 50px;
 }
 
 .container {
@@ -79,6 +80,9 @@ body {
   padding-inline-start: 0;
   list-style: none;
   display: flex;
+}
+.-menubar-auth .-menubar ul li {
+  border-bottom: solid 3px rgba(128, 128, 128, 0);
 }
 .-menubar-auth .-menubar ul li:not(:first-child) {
   margin-left: 60px;

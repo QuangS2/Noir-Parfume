@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/head-foot.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/effect.css">
+    <link rel="stylesheet" href="./css/cart.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/np.js"></script>
@@ -60,61 +61,95 @@
             </div>
         </div>
     </header>
+    <!-- cart.html -->
     <div class="wrapper">
         <div class="container">
             <section>
-                <div class="-sp-pro-motion">
-                    <div class="-sp-pro -slide">
-                        <div class="-arrow">
-                            <i class="fas fa-chevron-left -leftBtn"></i>
-                            <i class="fas fa-chevron-right -rightBtn"></i>
+                <div class="row cart-table">
+                    <div class="infor-table">
+                        <div class="tittle-top">
+                            <span class="-item-tittle">Sản phẩm</span>
+                            <span class="-cost-tittle">Giá đơn lẻ</span>
+                            <span class="-value-tittle">Số lượng</span>
+                            <span class="-total-tittle">Tổng giá</span>
                         </div>
-                        <div class="-bar-stick">
-                            <span slot="1" class="active"></span>
-                            <span slot="2"></span>
-                            <span slot="3"></span>
-                            <span slot="4"></span>
-                        </div>
-                        <div class="-img-sp -slide-img" slot="1" max-slot="4">
-                            <div class="-img-sp-content top" slot="1">
-                                <div>
-                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                        <ul>
+                            <li>
+                                <div class="item-info-block">
+                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
+                                    <div class="-item-infor -item-tittle">
+                                        <div class="-item-img"><img
+                                                src="./images/product/3283730a64f46651c9993413a32c9319.jpg" alt="">
+                                        </div>
+                                        <div class="-item-name">Coco chanel Calenra Saint</div>
+                                    </div>
+                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
+                                    <div class="-value-number -value-tittle">
+                                        <input type="number" name="" id="" value="2">
+                                    </div>
+                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
                                 </div>
-                            </div>
-                            <div class="-img-sp-content" slot="2">
-                                <div>
-                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="item-info-block">
+                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
+                                    <div class="-item-infor -item-tittle">
+                                        <div class="-item-img"><img
+                                                src="./images/product/laura-chouette-OG0_nX3RFzw-unsplash.jpg" alt="">
+                                        </div>
+                                        <div class="-item-name">Coco chanel Calenra Saint</div>
+                                    </div>
+                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
+                                    <div class="-value-number -value-tittle">
+                                        <input type="number" name="" id="" value="2">
+                                    </div>
+                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
                                 </div>
-                            </div>
-                            <div class="-img-sp-content" slot="3">
-                                <div>
-                                    <img src="./images/banner-sp/slide5.jpg" alt="">
+                            </li>
+                            <li>
+                                <div class="item-info-block">
+                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
+                                    <div class="-item-infor -item-tittle">
+                                        <div class="-item-img"><img
+                                                src="./images/product/3283730a64f46651c9993413a32c9319.jpg" alt="">
+                                        </div>
+                                        <div class="-item-name">Coco chanel Calenra Saint</div>
+                                    </div>
+                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
+                                    <div class="-value-number -value-tittle">
+                                        <input type="number" name="" id="" value="2">
+                                    </div>
+                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
                                 </div>
-                            </div>
-                            <div class="-img-sp-content" slot="4">
-                                <div>
-                                    <img src="./images/banner-sp/slide5.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="-promotion -slide">
-                        <div class="-bar-stick">
-                            <span slot="1" class="active"></span>
-                            <span slot="2"></span>
-                            <span slot="3"></span>
+                    <div class="thanh-toan">
+                        <span>Thanh toán</span>
+                        <div class="total-cost">
+                            <span>Tổng giá trị sản phảm</span>
+                            <div class="-value">2.890.000 ₫</div>
                         </div>
-                        <div class="-img-ad -slide-img" slot="1" max-slot="3">
-                            <div class="top" slot="1">
-                                <img src="./images/promotion/dior-paper.png" alt="">
-                            </div>
-                            <div slot="2">
-                                <img src="./images/promotion/dior-paper.png" alt="">
-                            </div>
-                            <div slot="3">
-                                <img src="./images/promotion/dior-paper.png" alt="">
+                        <div class="voucher">
+                            <span>Áp dụng voucher</span>
+                            <div class="-bar-selection">
+                                <input type="text">
+                                <div class="-value">2.890.000 ₫</div>
                             </div>
                         </div>
+                        <div class="ship">
+                            <span>Phí ship</span>
+                            <div class="-bar-selection">
+                                <input type="text">
+                                <div class="-value">2.890.000 ₫</div>
+                            </div>
+
+                        </div>
+                        <div class="final-cost">
+                            <span>Tổng đơn hàng</span>
+                            <div class="-value">2.890.000 ₫</div>
+                        </div>
+                        <a href="#" class="btn-thanhtoan">TIẾN HÀNH THANH TOÁN</a>
                     </div>
                 </div>
             </section>
@@ -185,77 +220,6 @@
     <div class="wrapper">
         <div class="container">
             <section>
-                <div class="-sex">
-                    <div class="-tittle">
-                        <h2>Đa dạng</h2>
-                    </div>
-                    <div class="-banner-content">
-                        <a href="#" class="-female -banner-view">
-                            <div><img src="./images/banner-sp/cover-female.jfif" alt=""></div>
-                            <div>
-                                <p>Nước hoa nữ</p>
-                                <p>Khám phá</p>
-                            </div>
-                        </a>
-                        <a href="#" class="-male -banner-view">
-                            <div><img src="./images/banner-sp/cover-male.png" alt=""></div>
-                            <div>
-                                <p>Nước hoa nam</p>
-                                <p>Khám phá</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <section>
-                <div class="-brand">
-                    <div class="-tittle">
-                        <h2>Chính hãng</h2>
-                    </div>
-                    <div class="-brand-logo">
-                        <a href="#">
-                            <h3>Chanel</h3>
-                        </a>
-                        <a href="#">
-                            <h3>Guerlain</h3>
-                        </a>
-                        <a href="#">
-                            <h3>Metropolis</h3>
-                        </a>
-                        <a href="#">
-                            <h3>Dior</h3>
-                        </a>
-                        <a href="#">
-                            <h3>Valentino</h3>
-                        </a>
-                    </div>
-                    <div class="-banner-content">
-                        <a href="#" class="-banner-view">
-                            <div><img src="./images/banner-sp/modelWoman2.png" alt=""></div>
-                            <div>
-                                <p>CHANEL</p>
-                                <p>Chi tiết</p>
-                            </div>
-                        </a>
-                        <a href="#" class="-banner-view">
-                            <div><img src="./images/banner-sp/wallpaperflare.com_wallpaper.jpg" alt=""></div>
-                            <div>
-                                <p>Valetino</p>
-                                <p>Chi tiết</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <section>
                 <div class="-bot-promotion">
                     <div class="-tittle">
                         <h2>Khuyến mãi hiện có</h2>
@@ -264,30 +228,6 @@
                         <a href="#"><img src="./images/banner-sp/modelWoman2.png" alt=""></a>
                         <a href="#"><img src="./images/banner-sp/modelWoman2.png" alt=""></a>
                         <a href="#"><img src="./images/banner-sp/modelWoman2.png" alt=""></a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <section>
-                <div class="-advise">
-                    <div class="-tittle">
-                        <h2>Tư vấn</h2>
-                    </div>
-                    <div class="-advise-box">
-                        <div class="-advise-mail">
-                            <h4>Qua email</h4>
-                            <input type="text" class="-box-mail" placeholder="Nhập Email...">
-                            <textarea name="-question" placeholder="Câu hỏi..."></textarea>
-                            <p>Gửi</p>
-                        </div>
-                        <div class="-advise-onl">
-                            <h4>Gặp tư vấn viên</h4>
-                            <textarea name="-question" placeholder="Câu hỏi..."></textarea>
-                            <p>Trò chuyện</p>
-                        </div>
                     </div>
                 </div>
             </section>

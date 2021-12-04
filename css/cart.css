@@ -1,0 +1,89 @@
+div.cart-table {
+  display: flex;
+}
+div.cart-table > div {
+  padding: 15px;
+}
+
+div.infor-table {
+  width: 765px;
+}
+div.infor-table ul {
+  list-style: none;
+}
+
+.tittle-top {
+  margin-left: 43px;
+  display: flex;
+}
+.tittle-top span {
+  display: block;
+}
+
+.-item-tittle {
+  width: 291px;
+}
+
+.-cost-tittle,
+.-value-tittle,
+.-total-tittle {
+  width: 140px;
+  margin: auto 0;
+}
+
+.-value-number input {
+  width: 60px;
+  text-align: right;
+}
+
+div.item-info-block {
+  display: flex;
+  margin: 17px 0;
+}
+
+.-del-item {
+  width: 43px;
+  margin: auto 0;
+}
+
+.-item-infor {
+  display: flex;
+}
+
+.-item-img {
+  width: 102px;
+}
+.-item-name {
+  margin: auto;
+}
+
+.thanh-toan {
+  width: 475px;
+  border: solid 2px;
+}
+.thanh-toan > div {
+  margin: 20px 0;
+}
+
+.-bar-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.-value {
+  text-align: right;
+}
+
+.btn-thanhtoan {
+  display: block;
+  padding: 23px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #740BA6;
+  color: white;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=cart.css.map */
