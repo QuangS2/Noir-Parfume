@@ -1,7 +1,7 @@
-div.cart-table {
+div.cart-list {
   display: flex;
 }
-div.cart-table > div {
+div.cart-list > div {
   padding: 15px;
 }
 
