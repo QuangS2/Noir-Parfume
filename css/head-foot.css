@@ -30,18 +30,18 @@ body {
   padding: 0%;
 }
 
-.-logo-search > a {
+.logo-search > a {
   color: black;
   text-decoration: none;
   display: block;
   margin: 0 auto;
   width: fit-content;
 }
-.-logo-search > a > h1 {
+.logo-search > a > h1 {
   margin: 0;
   font-size: 68px;
 }
-.-logo-search > div {
+.logo-search > div {
   display: flex;
   justify-content: space-between;
   border: solid 1px;
@@ -52,90 +52,160 @@ body {
   align-items: center;
   padding: 0 13px;
 }
-.-logo-search > div > input {
+.logo-search > div > input {
   border: none;
   font-size: 16px;
   width: 95%;
 }
-.-logo-search > div > input:focus {
+.logo-search > div > input:focus {
   outline: none;
 }
-.-logo-search > div > i {
+.logo-search > div > i {
   font-size: 23px;
   cursor: pointer;
 }
 
-.-menubar-auth {
+.menubar-auth {
   font-size: 25px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   margin-top: 29px;
 }
-.-menubar-auth a {
+.menubar-auth a {
   text-decoration: none;
   color: black;
 }
-.-menubar-auth .-menubar ul {
+.menubar-auth .menubar ul {
   padding-inline-start: 0;
   list-style: none;
   display: flex;
 }
-.-menubar-auth .-menubar ul li {
+.menubar-auth .menubar ul li {
   border-bottom: solid 3px rgba(128, 128, 128, 0);
 }
-.-menubar-auth .-menubar ul li:not(:first-child) {
+.menubar-auth .menubar ul li:not(:first-child) {
   margin-left: 60px;
 }
-.-menubar-auth .-auth {
+.menubar-auth .auth {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 285px;
 }
 
+.top-product {
+  margin-top: 41px;
+}
+.top-product div.bar-btn {
+  display: flex;
+}
+.top-product div.bar-btn p {
+  display: block;
+  padding: 7px 23px;
+  border: solid 2px rgba(196, 196, 196, 0);
+  font-size: 19px;
+  font-weight: bold;
+  margin-right: 11px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pro-line {
+  margin-top: 29px;
+}
+.pro-line > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  width: 200px;
+  text-align: center;
+}
+.product img {
+  width: 100%;
+}
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.bot-promotion div.banner-promotion {
+  display: flex;
+  justify-content: space-between;
+}
+.bot-promotion div.banner-promotion > a {
+  display: block;
+  width: 380px;
+}
+
+.tittle {
+  font-size: 31px;
+  text-align: center;
+  margin: 37px 0;
+}
+
+.utilities {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: rgba(196, 196, 196, 0.31);
+}
+.utilities > div {
+  text-align: center;
+}
+.utilities > div i {
+  font-size: 50px;
+}
+.utilities > div p {
+  margin-top: 17px;
+  font-size: 23px;
+}
+
 footer {
   background-color: rgba(196, 196, 196, 0.1);
 }
 
-.-foot {
+.foot {
   display: flex;
   font-size: 17px;
   font-weight: bold;
   padding-top: 48px;
 }
-.-foot div.-short-infor {
+.foot div.short-infor {
   width: 820px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.-foot div.-short-infor > div {
+.foot div.short-infor > div {
   width: 37%;
   margin-top: 23px;
 }
-.-foot div.-short-infor > div h4 {
+.foot div.short-infor > div h4 {
   margin: 0 auto;
   width: fit-content;
   font-size: 31px;
 }
-.-foot div.-short-infor > div.-contact div {
+.foot div.short-infor > div.contact div {
   display: flex;
 }
-.-foot div.-short-infor > div.-contact div i {
+.foot div.short-infor > div.contact div i {
   padding: 5px;
 }
-.-foot div.-short-infor > div.-contact div p {
+.foot div.short-infor > div.contact div p {
   margin-left: 17px;
 }
-.-foot div.-short-infor > div.-register div {
+.foot div.short-infor > div.register div {
   display: flex;
 }
-.-foot div.-short-infor > div.-register div input {
+.foot div.short-infor > div.register div input {
   width: 240px;
   height: 37px;
 }
-.-foot div.-short-infor > div.-register div p {
+.foot div.short-infor > div.register div p {
   display: block;
   padding: 7px 17px;
   margin-left: auto;
@@ -143,25 +213,25 @@ footer {
   border-radius: 7px;
   cursor: pointer;
 }
-.-foot div.-short-infor > div.-follow div i {
+.foot div.short-infor > div.follow div i {
   width: 29px;
 }
-.-foot div.-short-infor > div.-follow div a {
+.foot div.short-infor > div.follow div a {
   color: black;
 }
-.-foot div.-map {
+.foot div.map {
   margin-left: auto;
 }
-.-foot div.-map div.-ggmap {
+.foot div.map div.ggmap {
   width: 380px;
   height: 300px;
 }
-.-foot div.-map div.-pay {
+.foot div.map div.pay {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
 }
-.-foot div.-map div.-pay > img {
+.foot div.map div.pay > img {
   width: 15%;
 }
 

@@ -1,13 +1,13 @@
-.-sp-pro-motion {
+.sp-pro-motion {
   display: flex;
   justify-content: space-between;
   height: 435px;
   margin-top: 31px;
 }
-.-sp-pro-motion > div.-sp-pro {
+.sp-pro-motion > div.sp-pro {
   width: 774px;
 }
-.-sp-pro-motion > div.-sp-pro div.-arrow {
+.sp-pro-motion > div.sp-pro div.arrow {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -16,11 +16,11 @@
   font-size: 47px;
   z-index: 5;
 }
-.-sp-pro-motion > div.-sp-pro div.-arrow > i {
+.sp-pro-motion > div.sp-pro div.arrow > i {
   padding: 0 1em;
   cursor: pointer;
 }
-.-sp-pro-motion > div div.-bar-stick {
+.sp-pro-motion > div div.bar-stick {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -28,7 +28,7 @@
   bottom: 10%;
   width: 100%;
 }
-.-sp-pro-motion > div div.-bar-stick span {
+.sp-pro-motion > div div.bar-stick span {
   display: block;
   width: 29px;
   height: 3px;
@@ -36,90 +36,47 @@
   margin: 0 7px;
   cursor: pointer;
 }
-.-sp-pro-motion > div.-promotion {
+.sp-pro-motion > div.promotion {
   width: 435px;
   position: relative;
 }
-.-sp-pro-motion > div img {
+.sp-pro-motion > div img {
   width: 100%;
 }
 
-.-top-product {
-  margin-top: 41px;
-}
-.-top-product div.-bar-btn {
-  display: flex;
-}
-.-top-product div.-bar-btn p {
-  display: block;
-  padding: 7px 23px;
-  border: solid 2px rgba(196, 196, 196, 0);
-  font-size: 19px;
-  font-weight: bold;
-  margin-right: 11px;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.-pro-line {
-  margin-top: 29px;
-}
-.-pro-line > div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.-product {
-  width: 200px;
-  text-align: center;
-}
-.-product img {
-  width: 100%;
-}
-.-product a {
-  text-decoration: none;
-  color: black;
-}
-
-.-sex div.-banner-content > a {
+.sex div.banner-content > a {
   width: 600px;
 }
 
-.-banner-content {
+.banner-content {
   display: flex;
   justify-content: space-between;
 }
-.-banner-content > a > div:last-child {
+.banner-content > a > div:last-child {
   bottom: 23px;
 }
-.-banner-content > a:first-child p {
+.banner-content > a:first-child p {
   color: black;
 }
-.-banner-content > a:last-child p {
+.banner-content > a:last-child p {
   color: rgba(255, 255, 255, 0.58);
 }
 
-.-tittle {
-  font-size: 31px;
-  text-align: center;
-  margin: 37px 0;
-}
-
-.-banner-view {
+.banner-view {
   display: block;
   position: relative;
 }
-.-banner-view > div:last-child {
+.banner-view > div:last-child {
   position: absolute;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
-.-banner-view > div:last-child > p {
+.banner-view > div:last-child > p {
   font-size: 31px;
   font-weight: bold;
 }
-.-banner-view > div:last-child > p:last-child {
+.banner-view > div:last-child > p:last-child {
   width: fit-content;
   margin: 0 auto;
   margin-top: 7px;
@@ -131,95 +88,68 @@
   color: black;
 }
 
-.-brand {
+.brand {
   margin-top: 37px;
 }
-.-brand div.-banner-content {
+.brand div.banner-content {
   margin-top: 37px;
 }
-.-brand div.-banner-content > a:first-child {
+.brand div.banner-content > a:first-child {
   width: 454px;
 }
-.-brand div.-banner-content > a:last-child {
+.brand div.banner-content > a:last-child {
   width: 757px;
 }
-.-brand-logo {
+.brand-logo {
   margin-top: 23px;
   display: flex;
   justify-content: space-around;
 }
-.-brand-logo a {
+.brand-logo a {
   border-bottom: solid 3px rgba(128, 128, 128, 0);
 }
-.-brand-logo h3 {
+.brand-logo h3 {
   color: rgba(0, 0, 0, 0.71);
 }
 
-.-bot-promotion div.-banner-promotion {
-  display: flex;
-  justify-content: space-between;
-}
-.-bot-promotion div.-banner-promotion > a {
-  display: block;
-  width: 380px;
-}
-
-.-advise-box {
+.advise-box {
   display: flex;
   justify-content: space-around;
   font-size: 27px;
 }
-.-advise-box > div {
+.advise-box > div {
   width: 40%;
 }
-.-advise-box > div p {
+.advise-box > div p {
   width: fit-content;
   padding: 7px 23px;
   border-radius: 7px;
   font-size: 23px;
   cursor: pointer;
 }
-.-advise-box > div h4 {
+.advise-box > div h4 {
   text-align: center;
 }
-.-advise-box > div input,
-.-advise-box > div textarea {
+.advise-box > div input,
+.advise-box > div textarea {
   width: 100%;
   margin: 11px;
   margin-left: unset;
   padding: 7px;
 }
-.-advise-box > div.-advise-mail textarea {
+.advise-box > div.advise-mail textarea {
   height: 126px;
 }
-.-advise-box > div.-advise-mail p {
+.advise-box > div.advise-mail p {
   background-color: gray;
   margin-left: auto;
 }
-.-advise-box > div.-advise-onl textarea {
+.advise-box > div.advise-onl textarea {
   height: 184px;
 }
-.-advise-box > div.-advise-onl p {
+.advise-box > div.advise-onl p {
   background-color: lightblue;
   margin: 0 auto;
-}
-
-.-utilities {
-  margin-top: 37px;
-  display: flex;
-  justify-content: space-around;
-  padding: 50px 0;
-  background-color: rgba(196, 196, 196, 0.31);
-}
-.-utilities > div {
-  text-align: center;
-}
-.-utilities > div i {
-  font-size: 50px;
-}
-.-utilities > div p {
-  margin-top: 17px;
-  font-size: 23px;
 }
 
 /*# sourceMappingURL=index.css.map */

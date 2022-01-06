@@ -18,25 +18,25 @@ span.active {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.-menubar li.hover, .-menubar li.active, .-brand-logo a.hover, .-brand-logo a.active {
+.menubar li.hover, .menubar li.active, .brand-logo a.hover, .brand-logo a.active {
   border-bottom: solid 3px black !important;
 }
 
-.-btn.active {
+.btn.active {
   background-color: rgba(0, 0, 0, 0.9) !important;
   color: white !important;
   border: solid 2px rgba(0, 0, 0, 0) !important;
 }
 
-.-btn.hover {
+.btn.hover {
   border: solid 2px rgba(0, 0, 0, 0.9) !important;
 }
 
-div.-slide {
+div.slide {
   position: relative !important;
   overflow: hidden !important;
 }
-div.-slide-img > div {
+div.slide-img > div {
   opacity: 0;
   position: absolute;
   width: 100%;

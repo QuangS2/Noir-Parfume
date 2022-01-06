@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/head-foot.css">
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/item-detail.css">
     <link rel="stylesheet" href="./css/effect.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -60,101 +60,128 @@
             </div>
         </div>
     </header>
-    <!-- cart.html -->
+    <!-- item-detail.html -->
     <div class="wrapper">
         <div class="container">
             <section>
-                <div class="row cart-list">
-                    <div class="infor-table">
-                        <div class="tittle-top">
-                            <span class="-item-tittle">Sản phẩm</span>
-                            <span class="-cost-tittle">Giá đơn lẻ</span>
-                            <span class="-value-tittle">Số lượng</span>
-                            <span class="-total-tittle">Tổng giá</span>
+                <div class="row item-short-detail">
+                    <div class="col item-imgs">
+                        <div class="main-img"><img
+                                src="./images/product/200401-dnp-chanel-coco-mademoiselle-leau-privée-8.jpg" alt="">
                         </div>
-                        <ul>
-                            <li>
-                                <div class="item-info-block">
-                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
-                                    <div class="-item-infor -item-tittle">
-                                        <div class="-item-img"><img
-                                                src="./images/product/3283730a64f46651c9993413a32c9319.jpg" alt="">
-                                        </div>
-                                        <div class="-item-name">Coco chanel Calenra Saint</div>
-                                    </div>
-                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
-                                    <div class="-value-number -value-tittle">
-                                        <input type="number" name="" id="" value="2">
-                                    </div>
-                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-info-block">
-                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
-                                    <div class="-item-infor -item-tittle">
-                                        <div class="-item-img"><img
-                                                src="./images/product/laura-chouette-OG0_nX3RFzw-unsplash.jpg" alt="">
-                                        </div>
-                                        <div class="-item-name">Coco chanel Calenra Saint</div>
-                                    </div>
-                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
-                                    <div class="-value-number -value-tittle">
-                                        <input type="number" name="" id="" value="2">
-                                    </div>
-                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item-info-block">
-                                    <div class="-del-item"><i class="fas fa-trash-alt"></i></div>
-                                    <div class="-item-infor -item-tittle">
-                                        <div class="-item-img"><img
-                                                src="./images/product/3283730a64f46651c9993413a32c9319.jpg" alt="">
-                                        </div>
-                                        <div class="-item-name">Coco chanel Calenra Saint</div>
-                                    </div>
-                                    <div class="-item-cost -cost-tittle">2.890.000 ₫</div>
-                                    <div class="-value-number -value-tittle">
-                                        <input type="number" name="" id="" value="2">
-                                    </div>
-                                    <div class="-total-cost -total-tittle">2.890.000 ₫</div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="list-img">
+                            <div><img src="./images/product/200401-dnp-chanel-coco-mademoiselle-leau-privée-8.jpg"
+                                    alt=""></div>
+                            <div><img src="./images/product/200401-dnp-chanel-coco-mademoiselle-leau-privée-8.jpg"
+                                    alt=""></div>
+                            <div><img src="./images/product/200401-dnp-chanel-coco-mademoiselle-leau-privée-8.jpg"
+                                    alt=""></div>
+                        </div>
                     </div>
-                    <div class="thanh-toan">
-                        <span>Thanh toán</span>
-                        <div class="total-cost">
-                            <span>Tổng giá trị sản phảm</span>
-                            <div class="-value">2.890.000 ₫</div>
+                    <div class="col item-short-infor">
+                        <div class="item-name">
+                            <h1>Coco Eau De Toilette</h1>
                         </div>
-                        <div class="voucher">
-                            <span>Áp dụng voucher</span>
-                            <div class="-bar-selection">
-                                <input type="text">
-                                <div class="-value">2.890.000 ₫</div>
+                        <div class="brief-infor">
+                            <h3>Nước Hoa Chanel Coco Eau De Toilette </h3>
+                            <p>100ml</p>
+                            <p>Xuất xứ: Pháp</p>
+                            <p>Nhóm hương: Hương phương Đông cay nồng</p>
+                            <p>Sáng tạo bởi: Jacques Polge</p>
+                            <p>Phong cách: Trưởng thành, nữ tính, quyến rũ</p>
+                        </div>
+                        <div class="cart-item-bar">
+                            <input type="number" name="" id="" value="0" min="0" max="100">
+                            <div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>
+                        </div>
+                        <div class="brief-introduct">
+                            <p>Chính thức lên kệ ngay từ đầu những năm 80 của thế kỷ XX, nước hoa Chanel Coco Eau De
+                                Toilette 100ml khiến các cô nàng “mê mẩn” bởi mùi hương trưởng thành, nữ tính, cuốn hút
+                                số một của mình. Được sáng tạo bởi bậc thầy hương thơm nước Pháp – Jacques Polge, trải
+                                nghiệm làm đẹp mà Chanel Coco EDT mang đến chắc hẳn sẽ vô cùng ngọt ngào và đáng nhớ đối
+                                với mọi cô nàng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row description-evaluate">
+                    <div class="top-tittle">
+                        <p class="descrition">Mô tả</p>
+                        <p class="evalutate">Đánh giá</p>
+                    </div>
+                    <div class="content">
+                        <div class="content-description">
+                            <div class="introduct">Nước hoa Thierry Mugler Alien của thương hiệu Thierry Mugler là dòng
+                                thiết thế dành riêng cho phái nữ. Hương thơm biểu hiện sự quyến rũ, kỳ ảo, khó cưỡng lại
+                                của phái đẹp. Mùi hương Thierry Mugler Alien hoàn toàn khác biệt và mang một đẳng cấp
+                                cao khi chỉ sử dụng một vài nguyên liệu cơ bản. Không chỉ có độ lưu hương lâu trên 12
+                                giờ đồng hồ mà chai nước hoa này còn có độ tỏa hương rất xa với bán kính 2m. Alien là sự
+                                lựa chọn hoàn hảo dành cho bạn khi tham gia những buổi tiệc tùng lãng mạn.</div>
+                            <div class="item-detail">
+                                <p>100ml</p>
+                                <p>Xuất xứ: Pháp</p>
+                                <p>Nhóm hương: Hương phương Đông cay nồng</p>
+                                <p>Sáng tạo bởi: Jacques Polge</p>
+                                <p>Phong cách: Trưởng thành, nữ tính, quyến rũ</p>
                             </div>
                         </div>
-                        <div class="ship">
-                            <span>Phí ship</span>
-                            <div class="-bar-selection">
-                                <input type="text">
-                                <div class="-value">2.890.000 ₫</div>
+                        <div class="content-evaluate">
+                            <div class="point">
+                                <div class="point-value">5.0</div>
+                                <div class="count-evaluate">(30 đánh giá)</div>
                             </div>
-
+                            <div class="item-star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="star-bar">
+                                <div class="one-star">1<i class="fas fa-star"></i></div>
+                                <div class="two-star">2<i class="fas fa-star"></i></div>
+                                <div class="three-star">3<i class="fas fa-star"></i></div>
+                                <div class="four-star">4<i class="fas fa-star"></i></div>
+                                <div class="five-star">5<i class="fas fa-star"></i></div>
+                            </div>
+                            <div class="user-evaluate">
+                                <div class="evaluate">
+                                    <div class="avatar"><img src="./images/user/avatar.jpg" alt=""></div>
+                                    <div class="content-user-evaluate">
+                                        <div class="user-name">Chu Văn Chương</div>
+                                        <div class="user-evaluate-point">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <div class="user-comment">Shop giao hàng nhanh như cơn gió, đóng gói hàng cẩn thận. Về cảm quan PL1 được gia công chắc chắn hơn Z3, Z3 khi tháo lắp thì 2 chân đỡ hơi lỏng lẻo, nhìn ko chắc chắn bằng PL1 mặc dù cả hai đều đỡ lap tốt. Mỗi cái đều được tặng túi đi kèm. Tặng shop 5* về chất lượng và dịch vụ</div>
+                                        <div class="evaluate-time">2021-11-09 09:05</div>
+                                    </div>
+                                </div>
+                                <div class="evaluate">
+                                    <div class="avatar"><img src="./images/user/avatar.jpg" alt=""></div>
+                                    <div class="content-user-evaluate">
+                                        <div class="user-name">Chu Văn Chương</div>
+                                        <div class="user-evaluate-point">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i> 
+                                        </div>
+                                        <div class="user-comment">Shop giao hàng nhanh như cơn gió, đóng gói hàng cẩn thận. Về cảm quan PL1 được gia công chắc chắn hơn Z3, Z3 khi tháo lắp thì 2 chân đỡ hơi lỏng lẻo, nhìn ko chắc chắn bằng PL1 mặc dù cả hai đều đỡ lap tốt. Mỗi cái đều được tặng túi đi kèm. Tặng shop 5* về chất lượng và dịch vụ</div>
+                                        <div class="evaluate-time">2021-11-09 09:05</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="final-cost">
-                            <span>Tổng đơn hàng</span>
-                            <div class="-value">2.890.000 ₫</div>
-                        </div>
-                        <a href="#" class="btn-thanhtoan">TIẾN HÀNH THANH TOÁN</a>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-    <!-- cart.html - end  -->
+    <!-- item-detail.html - end  -->
     <div class="wrapper">
         <div class="container">
             <section>
@@ -217,7 +244,7 @@
             </section>
         </div>
     </div>
-    <div class="wrapper">
+<div class="wrapper">
         <div class="container">
             <section>
                 <div class="bot-promotion">

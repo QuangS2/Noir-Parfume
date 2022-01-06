@@ -1,0 +1,6 @@
+sass --watch scss/head-foot.scss:css/head-foot.css
+sass --watch scss/index.scss:css/index.css
+sass --watch scss/effect.scss:css/effect.css
+sass --watch scss/cart.scss:css/cart.css
+sass --watch scss/sell.scss:css/sell.css
+sass --watch scss/item-detail.scss:css/item-detail.css
