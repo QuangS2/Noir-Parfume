@@ -48,4 +48,8 @@ div.slide-img > div {
   text-align: center;
 }
 
+.cart-btn.active {
+  background-color: aquamarine;
+}
+
 /*# sourceMappingURL=effect.css.map */

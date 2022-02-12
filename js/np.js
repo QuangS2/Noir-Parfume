@@ -1,9 +1,16 @@
 //data
 var listPro = [];
+var listSell = JSON.parse(sessionStorage.getItem("listSell"));
+if (listSell === null) listSell = [];
 var id = 0;
 var gender = "all";
 var branch = "all";
 var loadId = Number(sessionStorage.getItem("loadId"));
+if (loadId === 0) {
+  console.log(loadId);
+  loadId = 1;
+}
+var countCart = listSell.length;
 function proData(
   name,
   price,
@@ -41,10 +48,11 @@ proData(
   "female",
   90,
   "",
-  "",
   "Francis Kurkdjian",
   "Sang trọng, quý phái, quyến rũ",
-  "Nước Hoa My Burberry Limited Edition ra mắt năm 2014 do Francis Kurkdjian sáng tạo lên. Được lấy cảm hứng từ những chiếc áo choàng thanh lịch, hương thơm ngọt ngào, có độ tỏa hương rất xa. Là dòng nước hoa phiên bản giới hạn."
+  [
+    "Nước Hoa My Burberry Limited Edition ra mắt năm 2014 do Francis Kurkdjian sáng tạo lên. Được lấy cảm hứng từ những chiếc áo choàng thanh lịch, hương thơm ngọt ngào, có độ tỏa hương rất xa. Là dòng nước hoa phiên bản giới hạn.",
+  ]
 );
 proData(
   "My Burberry Eau De Parfum",
@@ -60,7 +68,9 @@ proData(
   "Anh",
   "Francis Kurkdjian",
   "Sang trọng, thanh lịch, sành điệu",
-  "Nước hoa nữ My Burberry ra mắt năm 2014 do nhà sáng chế Francis Kurkdjian sáng tạo lên. My Burberry được lấy cảm hứng từ những chiếc áo choàng thanh lịch và hình ảnh khu vườn xanh ngát tại London. Hương thơm ngọt ngào cùng thiết kế nhỏ xinh chính là nét độc đáo của sản phẩm này."
+  [
+    "Nước hoa nữ My Burberry ra mắt năm 2014 do nhà sáng chế Francis Kurkdjian sáng tạo lên. My Burberry được lấy cảm hứng từ những chiếc áo choàng thanh lịch và hình ảnh khu vườn xanh ngát tại London. Hương thơm ngọt ngào cùng thiết kế nhỏ xinh chính là nét độc đáo của sản phẩm này.",
+  ]
 );
 proData(
   "Burberry London Eau De Parfum",
@@ -76,7 +86,9 @@ proData(
   "Anh",
   "",
   "Gợi cảm, nữ tính, quyến rũ",
-  "Nước hoa nữ Burberry London được sáng tạo nhờ sự hợp tác của thương hiệu cùng hai nhà pha chế tài hoa Dominique Ropion và Jean-Marc Chaillan vào năm 2006. Burberry London đại diện cuộc sống tự do thoải mái tại thành phố xinh đẹp London."
+  [
+    "Nước hoa nữ Burberry London được sáng tạo nhờ sự hợp tác của thương hiệu cùng hai nhà pha chế tài hoa Dominique Ropion và Jean-Marc Chaillan vào năm 2006. Burberry London đại diện cuộc sống tự do thoải mái tại thành phố xinh đẹp London.",
+  ]
 );
 proData(
   "Burberry For Women Eau De Parfum",
@@ -92,7 +104,9 @@ proData(
   "Pháp",
   "",
   "Cổ điển, dịu dàng, nữ tính",
-  "Ra mắt vào năm 1995, nước hoa Burberry For Women Eau De Parfum được giới thiệu như một phiên bản dịu dàng đầy nữ tính thuộc bộ đôi Burberry perfume. Sự pha trộn độc đáo giữa những nốt hương trái cây và hoa cỏ tươi mát chính là nguồn cảm hứng bất tận để tạo nên Burberry For Women."
+  [
+    "Ra mắt vào năm 1995, nước hoa Burberry For Women Eau De Parfum được giới thiệu như một phiên bản dịu dàng đầy nữ tính thuộc bộ đôi Burberry perfume. Sự pha trộn độc đáo giữa những nốt hương trái cây và hoa cỏ tươi mát chính là nguồn cảm hứng bất tận để tạo nên Burberry For Women.",
+  ]
 );
 proData(
   "Burberry Touch for Men Eau De Toilette",
@@ -114,8 +128,8 @@ proData(
   ]
 );
 $(function () {
-  loadPro();
   //-menubar
+  $(".cart-link").append('<div class="count-cart">' + countCart + "</div>");
   $(".menubar li,.brand-logo a").hover(
     function () {
       $(this).addClass("hover");
@@ -150,11 +164,7 @@ $(function () {
   });
   $(".bar-stick span").click(function () {
     var slot = Number($(this)[0].slot);
-    var clParent = $(this)
-      .parent()
-      .parent()
-      .attr("class")
-      .replace(/\s/g, ".");
+    var clParent = $(this).parent().parent().attr("class").replace(/\s/g, ".");
     var target = $("." + clParent + ">div.slide-img")
       .attr("class")
       .replace(/\s/g, ".");
@@ -215,20 +225,39 @@ $(function () {
     $(".drop-down").css("display", "none");
   });
   //click detail
-  $(".cart-item-bar .detail").click(function () { 
-    loadId = $(this).parent().parent().attr("value")
-    // console.log($(this).parent().parent().attr("value"));
-    sessionStorage.setItem("loadId",loadId);
+  $(".items").on("click", ".cart-item-bar .detail", function () {
+    loadId = Number($(this).parent().parent().attr("value"));
+    sessionStorage.setItem("loadId", loadId);
+  });
+
+  $(".cart-item-bar .detail").hover(
+    function () {
+      console.log(2);
+    },
+    function () {
+      console.log(3);
+    }
+  );
+  //click cart btn
+  $(".items,.cart-item-bar").on("click",".cart-btn",function(){
+    var proId = Number($(this).parent().parent().attr("value"));
+    if ($(this).hasClass("active")) {
+      listSell = listSell.filter((item) => item != proId); //remove
+    } else {
+      if (listSell.indexOf(proId) === -1) listSell.push(proId);
+    }
+    countCart = listSell.length;
+    sessionStorage.setItem("listSell", JSON.stringify(listSell));
+    $(".count-cart").html(countCart);
+    $(this).toggleClass("active");
   });
   //detail-page//
   //img
   $(".list-img img").click(function () {
     $(".main-img>img").attr("src", $(this).attr("src"));
-    
-    console.log(1);
   });
   //detail rieng sp
-  loadDetail();
+
   //mota-danhgia
   $(".descrition").click(function (e) {
     $(".content-description").css("display", "block");
@@ -238,6 +267,7 @@ $(function () {
     $(".content-description").css("display", "none");
     $(".content-evaluate").css("display", "block");
   });
+  onLoad();
 });
 function changSlide(n, clName) {
   var limit = Number($("." + clName).attr("max-slot"));
@@ -259,17 +289,23 @@ function changSlide(n, clName) {
     $("." + clParent + ">.bar-stick >span.active").removeClass("active");
     $("." + clParent + ">.bar-stick >span[slot=" + n + "]").addClass("active");
   }
-};
+}
 function loadPro() {
   listPro.forEach((pro) => {
     $(".items").append(
-      '<div class="one-item" value="'+pro.id+'">' +
+      '<div class="one-item" value="' +
+        pro.id +
+        '">' +
         '<div class="item-img"><img src="' +
         pro.img[0] +
         '"></div>' +
-        '<div class="item-name">'+pro.name+'</div>' +
+        '<div class="item-name">' +
+        pro.name +
+        "</div>" +
         '<div class="item-value">' +
-        '<div class="item-cost">'+pro.price+'₫</div>' +
+        '<div class="item-cost">' +
+        pro.price +
+        "₫</div>" +
         '<div class="item-star">' +
         '<i class="fas fa-star"></i>' +
         '<i class="fas fa-star"></i>' +
@@ -282,11 +318,44 @@ function loadPro() {
         "</div>"
     );
   });
-};
-function loadDetail(){
-  var targetItem = listPro.find(pro => pro.id===loadId);
+}
+function loadDetail() {
+  var targetItem = listPro.find((pro) => pro.id === loadId);
   $(".main-img img").attr("src", targetItem.img[0]);
   $(".list-img img").each(function (index) {
     $(this).attr("src", targetItem.img[index]);
   });
-};
+  $(".item-name h1").append(targetItem.name);
+  $(".brief-infor h3").append(targetItem.name);
+  if (targetItem.mlit != "")
+    $(".brief-infor").append("<p>" + targetItem.mlit + "ml</p>");
+  if (targetItem.from != "")
+    $(".brief-infor").append("<p>Xuất xứ: " + targetItem.from + "</p>");
+  if (targetItem.author != "")
+    $(".brief-infor").append("<p>Sáng tạo bởi: " + targetItem.author + "</p>");
+  if (targetItem.style != "")
+    $(".brief-infor").append("<p>Phong cách: " + targetItem.style + "</p>");
+  $(".price-item").append(targetItem.price + "vnđ");
+  $(".brief-introduct p").append(targetItem.intro[0]);
+  $(".introduct").append(targetItem.intro[1]);
+  if (targetItem.mlit != "")
+    $(".item-detail").append("<p>" + targetItem.mlit + "ml</p>");
+  if (targetItem.from != "")
+    $(".item-detail").append("<p>Xuất xứ: " + targetItem.from + "</p>");
+  if (targetItem.author != "")
+    $(".item-detail").append("<p>Sáng tạo bởi: " + targetItem.author + "</p>");
+  if (targetItem.style != "")
+    $(".item-detail").append("<p>Phong cách: " + targetItem.style + "</p>");
+  $(".item-short-infor").attr("value", targetItem.id);
+}
+function loadActive() {
+  $(".cart-btn").each(function () {
+    var idTmp = Number($(this).parent().parent().attr("value"));
+    if (listSell.indexOf(idTmp) !== -1) $(this).addClass("active");
+  });
+}
+function onLoad() {
+  loadPro();
+  loadDetail();
+  loadActive();
+}
