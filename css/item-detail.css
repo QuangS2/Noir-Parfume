@@ -22,6 +22,10 @@ img {
 }
 .list-img div {
   padding: 10px;
+  width: 30%;
+}
+.list-img div img {
+  cursor: pointer;
 }
 
 .item-short-infor {
@@ -40,11 +44,12 @@ img {
   margin: 40px auto;
   display: flex;
 }
-.cart-item-bar input {
+.cart-item-bar span {
   width: 100px;
-  text-align: right;
+  text-align: center;
   border-radius: 7px;
-  height: 40px;
+  padding: 5px;
+  background-color: gray;
 }
 
 .cart-btn {
@@ -55,6 +60,7 @@ img {
   width: 80px;
   text-align: center;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .description-evaluate {
@@ -72,13 +78,13 @@ img {
 
 .top-tittle {
   display: flex;
-  padding: 5px;
-  border: solid 1px;
 }
 .top-tittle p {
   text-align: center;
   width: 100px;
-  cursor: pointer;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
 }
 
 .content-evaluate {

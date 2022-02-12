@@ -43,4 +43,9 @@ div.slide-img > div {
   left: 0;
 }
 
+.selection-type li.hover, .selection-type li.active {
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+
 /*# sourceMappingURL=effect.css.map */
