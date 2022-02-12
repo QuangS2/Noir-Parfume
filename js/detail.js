@@ -15,6 +15,7 @@ $(function () {
     $(".content-evaluate").css("display", "block");
   });
   loadDetail();
+  loadActive();
 });
 function loadDetail() {
   var targetItem = listPro.find((pro) => pro.id === loadId);

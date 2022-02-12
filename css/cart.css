@@ -1,5 +1,5 @@
 div.cart-list {
-  display: flex;
+  display: none;
 }
 div.cart-list > div {
   padding: 15px;
@@ -20,18 +20,18 @@ div.infor-table ul {
   display: block;
 }
 
-.-item-tittle {
+.item-tittle {
   width: 291px;
 }
 
-.-cost-tittle,
-.-value-tittle,
-.-total-tittle {
+.cost-tittle,
+.value-tittle,
+.total-tittle {
   width: 140px;
   margin: auto 0;
 }
 
-.-value-number input {
+.value-number input {
   width: 60px;
   text-align: right;
 }
@@ -41,19 +41,19 @@ div.item-info-block {
   margin: 17px 0;
 }
 
-.-del-item {
+.del-item {
   width: 43px;
   margin: auto 0;
 }
 
-.-item-infor {
+.item-infor {
   display: flex;
 }
 
-.-item-img {
+.item-img {
   width: 102px;
 }
-.-item-name {
+.item-name {
   margin: auto;
 }
 
@@ -65,12 +65,12 @@ div.item-info-block {
   margin: 20px 0;
 }
 
-.-bar-selection {
+.bar-selection {
   display: flex;
   justify-content: space-between;
 }
 
-.-value {
+.value {
   text-align: right;
 }
 
@@ -84,6 +84,40 @@ div.item-info-block {
   background-color: #740BA6;
   color: white;
   font-weight: bolder;
+}
+
+.delete-item {
+  cursor: pointer;
+}
+
+.no-item {
+  height: 600px;
+  width: 100%;
+  background-image: url(../images/user/empty-cart.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.no-item > div {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  bottom: 50px;
+}
+.no-item > div h1 {
+  font-size: 30px;
+}
+.no-item > div a {
+  padding: 10px 10px;
+  margin: 10px auto;
+  border-radius: 15px;
+  display: block;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: blueviolet;
+  color: white;
 }
 
 /*# sourceMappingURL=cart.css.map */

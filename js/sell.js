@@ -49,7 +49,7 @@ $(function () {
     }
   );
   loadPro();
-  loadActive();
+    loadActive();
 });
 function loadPro() {
   listPro.forEach((pro) => {
@@ -80,9 +80,4 @@ function loadPro() {
     );
   });
 }
-function loadActive() {
-  $(".cart-btn").each(function () {
-    var idTmp = Number($(this).parent().parent().attr("value"));
-    if (listSell.indexOf(idTmp) !== -1) $(this).addClass("active");
-  });
-}
+

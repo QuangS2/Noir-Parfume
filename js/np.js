@@ -172,3 +172,9 @@ $(function () {
     $(this).toggleClass("active");
   });
 });
+function loadActive() {
+  $(".cart-btn").each(function () {
+    var idTmp = Number($(this).parent().parent().attr("value"));
+    if (listSell.indexOf(idTmp) !== -1) $(this).addClass("active");
+  });
+}
