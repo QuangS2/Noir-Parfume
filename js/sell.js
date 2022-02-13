@@ -25,14 +25,14 @@ $(function () {
   });
   $(".drop-bar-sort").hover(
     function () {
-      $(".drop-down").css("display", "block");
+      $(".drop-down").addClass("active");
     },
     function () {
-      $(".drop-down").css("display", "none");
+      $(".drop-down").removeClass("active");
     }
   );
   $(".drop-bar-sort").click(function () {
-    $(".drop-down").css("display", "none");
+    $(".drop-down").toggleClass("active");
   });
   //click detail
   $(".items").on("click", ".cart-item-bar .detail", function () {

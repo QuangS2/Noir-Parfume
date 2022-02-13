@@ -7,7 +7,6 @@ var gender = "all";
 var branch = "all";
 var loadId = Number(sessionStorage.getItem("loadId"));
 if (loadId === 0) {
-  console.log(loadId);
   loadId = 1;
 }
 var countCart = listSell.length;

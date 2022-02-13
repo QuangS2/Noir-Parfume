@@ -52,4 +52,17 @@ div.slide-img > div {
   background-color: aquamarine;
 }
 
+.drop-down.active {
+  display: block;
+}
+
+.drop ul.active {
+  display: block;
+}
+
+.drop ul li.active {
+  font-weight: bolder;
+  background-color: lightblue;
+}
+
 /*# sourceMappingURL=effect.css.map */

@@ -32,8 +32,18 @@ div.infor-table ul {
 }
 
 .value-number input {
-  width: 60px;
+  width: 50px;
   text-align: right;
+}
+
+.value-tittle {
+  display: flex;
+}
+.value-tittle p {
+  padding: 1px 5px;
+  cursor: pointer;
+  background-color: lightblue;
+  margin: 0 1px;
 }
 
 div.item-info-block {
@@ -68,6 +78,25 @@ div.item-info-block {
 .bar-selection {
   display: flex;
   justify-content: space-between;
+}
+
+.drop {
+  border: solid 1px;
+  border-radius: 3px;
+  width: 40%;
+}
+.drop p {
+  padding: 0 10px;
+}
+.drop ul {
+  display: none;
+}
+.drop ul li {
+  padding: 0 10px;
+}
+
+ul {
+  list-style: none;
 }
 
 .value {

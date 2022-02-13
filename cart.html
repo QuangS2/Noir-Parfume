@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/head-foot.css">
     <link rel="stylesheet" href="./css/cart.css">
     <link rel="stylesheet" href="./css/effect.css">
+    <link rel="shortcut icon" href="./images/user/logo3.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./js/np.js"></script>
@@ -74,7 +75,7 @@
                             <span class="total-tittle">Tổng giá</span>
                         </div>
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <div class="item-info-block">
                                     <div class="del-item"><i class="fas fa-trash-alt delete-item"></i></div>
                                     <div class="item-infor item-tittle">
@@ -85,30 +86,58 @@
                                     </div>
                                     <div class="-item-cost cost-tittle">2.890.000 ₫</div>
                                     <div class="value-number value-tittle">
+                                        <p option="plus"><i class="fas fa-caret-up"></i></p>
                                         <input type="number" name="" id="" value="1" min="1" readonly >
+                                        <p option="minus"><i class="fas fa-caret-down"></i></p>
                                     </div>
-                                    <div class="-total-cost total-tittle">2.890.000 ₫</div>
+                                    <div class="total-cost total-tittle">2.890.000 ₫</div>
                                 </div>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div class="thanh-toan">
                         <span>Thanh toán</span>
-                        <div class="total-cost">
+                        <div>
                             <span>Tổng giá trị sản phảm</span>
-                            <div class="value">2.890.000 ₫</div>
+                            <div class="value total-price">2.890.000 ₫</div>
                         </div>
                         <div class="voucher">
                             <span>Áp dụng voucher</span>
                             <div class="bar-selection">
-                                <input type="text">
+                                <div class="voucher-selec drop">
+                                    <p>Không sử dụng</p>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="voucher" checked kind="null" ><span>Không sử dụng</span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="voucher" kind="minus" nvalue="150000"><span>Giảm giá 150.000 ₫</span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="voucher" kind="percent" nvalue="5"><span>Giảm 5% giá trị đơn hàng</span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="voucher" kind="percent" nvalue="7"><span>Giảm 7% giá trị đơn hàng</span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="value">2.890.000 ₫</div>
                             </div>
                         </div>
                         <div class="ship">
                             <span>Phí ship</span>
                             <div class="bar-selection">
-                                <input type="text">
+                                <div class="ship-selec drop">
+                                    <p>Nội thành: 15.000 ₫</p>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="shiper" checked kind="minus" nvalue="15000"><span>Nội thành: 15.000 ₫</span>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="shiper" kind="minus" nvalue="30000"><span>Ngoại thành: 30.000 ₫</span>
+                                        </li>
+                                    </ul>
+                                </div>
                                 <div class="value">2.890.000 ₫</div>
                             </div>
 
@@ -125,7 +154,7 @@
                         <h1>Bạn chưa mua gì cả :(</h1>
                         <a href="sell.html">Mua hàng</a>
                     </div>
-                    
+
                 </div>
             </section>
         </div>
