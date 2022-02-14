@@ -40,13 +40,15 @@ $(function () {
           "</li>"
       );
     });
-    $(".total-price").html(totalPrice+'₫');
+    $(".total-price").html(totalPrice + "₫");
   }
   $(".cart-list").on("click", ".delete-item", function () {
     var proId = Number($(this).parent().parent().attr("value"));
     // $(selector).html();
     // console.log();
-    totalPrice-=Number($(this).parent().parent().children().last().html().slice(0,-1));
+    totalPrice -= Number(
+      $(this).parent().parent().children().last().html().slice(0, -1)
+    );
     $($(this).parent().parent().parent()).css("display", "none");
     listSell = listSell.filter((item) => item != proId); //remove
     countCart = listSell.length;
@@ -56,7 +58,8 @@ $(function () {
       $(".no-item").css("display", "block");
       $(".cart-list").css("display", "none");
     }
-    $(".total-price").html(totalPrice+'₫');
+    $(".total-price").html(totalPrice + "₫");
+    loadMinus();
   });
   $(".cart-list").on("click", ".value-number p", function () {
     var valueEml = $(this).parent()[0].children[1];
@@ -65,32 +68,76 @@ $(function () {
     var targetItem = listPro.find((pro) => pro.id === proId);
     if ($(this).attr("option") === "plus") {
       nValue++;
-      totalPrice+=Number(targetItem.price);
+      totalPrice += Number(targetItem.price);
     } else if (nValue > 1) {
       nValue--;
-      totalPrice-=Number(targetItem.price);
+      totalPrice -= Number(targetItem.price);
     }
     $(valueEml).attr("value", nValue);
     $($(this).parent().next()).html(nValue * targetItem.price + "₫");
-    $(".total-price").html(totalPrice+'₫');
+    $(".total-price").html(totalPrice + "₫");
+    loadMinus();
   });
-  $(".drop").hover(function () {
+  $(".drop").hover(
+    function () {
       $(this).children().last().addClass("active");
-    }, function () {
+    },
+    function () {
       $(this).children().last().removeClass("active");
     }
   );
-  $(".drop").click(function (e) { 
+  $(".drop").click(function (e) {
     $($(this).children().last()).toggleClass("active");
   });
-  $(".drop li").hover(function () {
+  $(".drop li").hover(
+    function () {
       $(this).addClass("active");
-    }, function () {
+    },
+    function () {
       $(this).removeClass("active");
     }
   );
-  $(".drop li").click(function (e) { 
-    $($(this).children().first()).prop("checked",true);
-    $(this).parent().parent().children().first().html($(this).children().last().html());
+  $(".drop li").click(function (e) {
+    $($(this).children().first()).prop("checked", true);
+    $(this)
+      .parent()
+      .parent()
+      .children()
+      .first()
+      .html($(this).children().last().html());
+    loadMinus();
   });
+  loadMinus();
 });
+function loadMinus() {
+  var inp = $(".bar-selection input:checked");
+  var liActive = $(inp).parent();
+  $(liActive).each(function () {
+    var minusValue = 0;
+    var kind = $($(this).children().first()).attr("kind");
+
+    if (kind !== "null") {
+      if (kind === "minus") {
+        minusValue = Number($($(this).children().first()).attr("nvalue"));
+      } else if (kind === "percent") {
+        minusValue =
+          (totalPrice * Number($($(this).children().first()).attr("nvalue"))) /
+          100;
+      }
+    }
+    var kindMinus = $(this).children().first().attr("name");
+    if (kindMinus === "voucher")
+      $($(this).parent().parent().next()).html("-" + minusValue + "₫");
+    else if (kindMinus === "shiper")
+      $($(this).parent().parent().next()).html("+" + minusValue + "₫");
+  });
+  loadAllTotal();
+}
+function loadAllTotal(){
+  var minusValue =$(".bar-selection .value"); 
+  var allTotal = totalPrice-Number($($(minusValue)[0]).html().substring(1).slice(0,-1));
+  allTotal += Number($($(minusValue)[1]).html().substring(1).slice(0,-1));
+  // console.log(allTotal);
+  $(".final-cost .value").html(allTotal);
+  
+}
