@@ -20,7 +20,9 @@ function proData(
   from,
   author,
   style,
-  intro
+  intro,
+  hot,
+  selling
 ) {
   var newPro = {};
   newPro.id = ++id;
@@ -34,6 +36,8 @@ function proData(
     (newPro.author = author),
     (newPro.style = style),
     (newPro.intro = intro);
+    newPro.hot = hot;
+    newPro.selling = selling;
   listPro.push(newPro);
 }
 proData(
@@ -69,7 +73,9 @@ proData(
   "Sang trọng, thanh lịch, sành điệu",
   [
     "Nước hoa nữ My Burberry ra mắt năm 2014 do nhà sáng chế Francis Kurkdjian sáng tạo lên. My Burberry được lấy cảm hứng từ những chiếc áo choàng thanh lịch và hình ảnh khu vườn xanh ngát tại London. Hương thơm ngọt ngào cùng thiết kế nhỏ xinh chính là nét độc đáo của sản phẩm này.",
-  ]
+  ],
+  false,
+  false
 );
 proData(
   "Burberry London Eau De Parfum",
@@ -87,7 +93,9 @@ proData(
   "Gợi cảm, nữ tính, quyến rũ",
   [
     "Nước hoa nữ Burberry London được sáng tạo nhờ sự hợp tác của thương hiệu cùng hai nhà pha chế tài hoa Dominique Ropion và Jean-Marc Chaillan vào năm 2006. Burberry London đại diện cuộc sống tự do thoải mái tại thành phố xinh đẹp London.",
-  ]
+  ],
+  false,
+  false
 );
 proData(
   "Burberry For Women Eau De Parfum",
@@ -105,7 +113,9 @@ proData(
   "Cổ điển, dịu dàng, nữ tính",
   [
     "Ra mắt vào năm 1995, nước hoa Burberry For Women Eau De Parfum được giới thiệu như một phiên bản dịu dàng đầy nữ tính thuộc bộ đôi Burberry perfume. Sự pha trộn độc đáo giữa những nốt hương trái cây và hoa cỏ tươi mát chính là nguồn cảm hứng bất tận để tạo nên Burberry For Women.",
-  ]
+  ],
+  false,
+  false
 );
 proData(
   "Burberry Touch for Men Eau De Toilette",
@@ -124,7 +134,9 @@ proData(
   [
     "Nước hoa Burberry Touch for Men là dòng thiết thế dành riêng cho phái mạnh. Với thành phần kết hợp từ hoa cỏ, gỗ, xạ hương sẽ tạo nên một khúc dạo đầu hoàn hảo, đầy tinh tế cho cánh mày râu.",
     "Nước hoa Burberry Touch for Men là dòng thiết thế dành riêng cho phái mạnh. Với thành phần kết hợp từ hoa cỏ, gỗ, xạ hương sẽ tạo nên một khúc dạo đầu hoàn hảo, đầy tinh tế cho cánh mày râu. Burberry Touch for Men được sáng tạo bởi Jean-Pierre Bethouart, mang lại mùi hương đầy sáng tạo cho người dùng cảm nhận sự trầm bổng của cuộc sống, đôi lúc dữ dội, đôi lúc lại trầm lắng, nhẹ nhàng.",
-  ]
+  ],
+  false,
+  false
 );
 $(function () {
   //-menubar

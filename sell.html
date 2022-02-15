@@ -71,32 +71,31 @@
                         <div class="sex-selection">
                             <h2>Giới tính</h2>
                             <ul>
-                                <li id="male"><input type="radio" name="gender">Nam</li>
-                                <li id="female"><input type="radio" name="gender">Nữ</li>
-                                <li id="allgen" class="active"><input type="radio" name="gender" checked>Tất cả</li>
+                                <li value="male"><input type="radio" name="gender">Nam</li>
+                                <li value="female"><input type="radio" name="gender">Nữ</li>
+                                <li value="all" class="active"><input type="radio" name="gender" checked>Tất cả</li>
                             </ul>
                         </div>
                         <div class="brand-selection">
                             <h2>Thương hiệu</h2>
                             <ul>
-                                <li id="dior"><input type="radio" name="branch">Dior</li>
-                                <li id="coco"><input type="radio" name="branch">COCO</li>
-                                <li id="allbranch" class="active"><input type="radio" name="branch" checked>Tất cả</li>
+                                <li value="dior"><input type="radio" name="branch">Dior</li>
+                                <li value="coco"><input type="radio" name="branch">COCO</li>
+                                <li value="all" class="active"><input type="radio" name="branch" checked>Tất cả</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col item-table">
                         <div class="drop-bar-sort">
                             <div class="drop-top">
-                                <span>Giá giảm</span>
+                                <span>Giá giảm dần</span>
                                 <i class="fas fa-angle-down"></i>
                             </div>
                             <div class="drop-down">
                                 <ul>
-                                    <li><input type="radio" name="sort-items" checked><span>Gia Giam</span></li>
-                                    <li><input type="radio" name="sort-items"><span>Gia tang</span></li>
-                                    <li><input type="radio" name="sort-items"><span>Gia khuyen mai</span></li>
-                                    <li><input type="radio" name="sort-items"><span>Gia ten</span></li>
+                                    <li><input type="radio" name="sort-items" checked kind="pricedown"><span>Giá giảm dần</span></li>
+                                    <li><input type="radio" name="sort-items" kind="priceup"><span>Giá tăng dần</span></li>
+                                    <li><input type="radio" name="sort-items" kind="name"><span>Từ A->Z</span></li>
                                 </ul> 
                             </div>            
                         </div>

@@ -18,10 +18,12 @@ $(function () {
           $(this).parent().removeClass("active");
         }
       });
+      loadSort();
     });
   //sort items
   $(".drop-down li").click(function () {
     $(".drop-top span").html($($(this).children()[1]).html());
+    loadSort();
   });
   $(".drop-bar-sort").hover(
     function () {
@@ -48,36 +50,57 @@ $(function () {
       console.log(3);
     }
   );
-  loadPro();
-    loadActive();
+  loadSort();
+  
+
 });
 function loadPro() {
+  $(".items").html('');
+  var gender = $(".sex-selection li.active").attr("value");
+  var branch = $(".brand-selection li.active").attr("value");
   listPro.forEach((pro) => {
-    $(".items").append(
-      '<div class="one-item" value="' +
-        pro.id +
-        '">' +
-        '<div class="item-img"><img src="' +
-        pro.img[0] +
-        '"></div>' +
-        '<div class="item-name">' +
-        pro.name +
-        "</div>" +
-        '<div class="item-value">' +
-        '<div class="item-cost">' +
-        pro.price +
-        "₫</div>" +
-        '<div class="item-star">' +
-        '<i class="fas fa-star"></i>' +
-        '<i class="fas fa-star"></i>' +
-        '<i class="fas fa-star"></i>' +
-        " </div>" +
-        "</div>" +
-        ' <div class="cart-item-bar">' +
-        '     <a href="item-detail.html" class="detail">Detail</a>' +
-        '<div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>' +
-        "</div>"
-    );
+    if (
+      (gender === "all" || gender === pro.gender) &&
+      (branch === "all" || branch === pro.branch)
+    )
+      $(".items").append(
+        '<div class="one-item" value="' +
+          pro.id +
+          '">' +
+          '<div class="item-img"><img src="' +
+          pro.img[0] +
+          '"></div>' +
+          '<div class="item-name">' +
+          pro.name +
+          "</div>" +
+          '<div class="item-value">' +
+          '<div class="item-cost">' +
+          pro.price +
+          "₫</div>" +
+          '<div class="item-star">' +
+          '<i class="fas fa-star"></i>' +
+          '<i class="fas fa-star"></i>' +
+          '<i class="fas fa-star"></i>' +
+          " </div>" +
+          "</div>" +
+          ' <div class="cart-item-bar">' +
+          '     <a href="item-detail.html" class="detail">Detail</a>' +
+          '<div class="cart-btn"><i class="fas fa-shopping-cart"></i></div>' +
+          "</div>"
+      );
   });
 }
-
+function loadSort(){
+  var kind = $(".drop-down input:checked").attr("kind");
+    if(kind==="priceup"){
+      listPro.sort((a,b)=>a.price>b.price?1:((a.price<b.price)?-1:0));
+    }
+    if(kind==="pricedown"){
+      listPro.sort((a,b)=>a.price<b.price?1:((a.price>b.price)?-1:0));
+    }
+    if(kind==="name"){
+      listPro.sort((a,b)=>a.name>b.name?1:((a.name<b.name)?-1:0));
+    }
+    loadPro();
+    loadActive();
+}
