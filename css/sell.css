@@ -100,6 +100,11 @@ div.drop-down li:hover {
   border-radius: 3px;
   cursor: pointer;
 }
+.cart-item-bar a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
 
 .page-item {
   margin-top: 30px;

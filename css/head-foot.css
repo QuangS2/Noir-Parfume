@@ -129,11 +129,12 @@ body {
 }
 .pro-line > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .product {
   width: 200px;
+  margin-right: 60px;
   text-align: center;
 }
 .product img {
@@ -142,6 +143,7 @@ body {
 .product a {
   text-decoration: none;
   color: black;
+  width: 200px;
 }
 
 .link-product {
@@ -264,6 +266,17 @@ footer {
 }
 .foot div.map div.pay > img {
   width: 15%;
+}
+
+@media only screen and (max-width: 1024px) {
+  * {
+    color: red;
+  }
+}
+@media only screen and (max-width: 900px) {
+  * {
+    color: green;
+  }
 }
 
 /*# sourceMappingURL=head-foot.css.map */
