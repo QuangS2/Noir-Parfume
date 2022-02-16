@@ -65,4 +65,12 @@ div.slide-img > div {
   background-color: lightblue;
 }
 
+.link-product > p.active {
+  top: 0%;
+}
+
+.view-detail.active {
+  opacity: 1;
+}
+
 /*# sourceMappingURL=effect.css.map */

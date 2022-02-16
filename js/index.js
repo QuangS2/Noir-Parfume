@@ -31,6 +31,12 @@ $(function () {
     changSlide(Number($(".img-sp").attr("slot")) + 1, "img-sp");
     changSlide(Number($(".img-ad").attr("slot")) + 1, "img-ad");
   }, 5000);
+  $(".banner-view").hover(function () {
+      $($(this).children().last().children().last()).addClass("active");
+    }, function () {
+      $($(this).children().last().children().last()).removeClass("active");
+    }
+  );
 });
 function changSlide(n, clName) {
   var limit = Number($("." + clName).attr("max-slot"));
