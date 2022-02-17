@@ -268,15 +268,4 @@ footer {
   width: 15%;
 }
 
-@media only screen and (max-width: 1024px) {
-  * {
-    color: red;
-  }
-}
-@media only screen and (max-width: 900px) {
-  * {
-    color: green;
-  }
-}
-
 /*# sourceMappingURL=head-foot.css.map */
